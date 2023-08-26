@@ -11,7 +11,7 @@ class Solution {
 
         for(int i =0,j=0; (i)<arr.length;){
             if(nums[j]!=(val)){
-                arr[i]=nums[j];
+                nums[i]=nums[j];
                 i++;
                 if(j<arr.length-1){
                 j++;}
@@ -31,9 +31,9 @@ class Solution {
                 
             }
         }
-        for(int i =0;i<nums.length;i++){
-            nums[i]=arr[i];
-        }
+        // for(int i =0;i<nums.length;i++){
+        //     nums[i]=arr[i];
+        // }
         k=nums.length-k;
         Arrays.sort(nums,0,k);
         // for (int i = 0; i < k; i++) {
