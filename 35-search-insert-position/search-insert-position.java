@@ -2,7 +2,7 @@ class Solution {
     public int searchInsert(int[] nums, int target) {
         int p1=0;
         int p2 = nums.length-1;
-        while(p1<p2){
+        while(p1<p2 && nums[p1]<target && nums[p2]<target ){
             if(nums[p1]==target){
                 return p1;
             }
